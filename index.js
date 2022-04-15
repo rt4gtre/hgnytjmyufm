@@ -7,7 +7,7 @@ var lasttime = -1;
 var moving = 0;
 var first = false;
 var connected = 0;
-var actions = [ 'forward', 'back', 'left', 'right']
+var actions = [ 'forward', 'back', 'left', 'right', 'forward', 'back', 'left', 'right' ]
 var lastaction;
 var pi = 3.14159;
 var moveinterval = 2; // 2 second movement interval
@@ -37,21 +37,8 @@ bot.on('login',function(){
 	}
 	for (let i=0; i<10; i++) { 
 	   task(i); 
-	} 
-	console.log("Logged In")
-	bot.chat("hello");
-});
-  
-function task(i) { 
-	
-  setTimeout(function() { 
-    if(first == true){
-	bot.chat("Subscribe To Easy Gamer : https://www.youtube.com/channel/UCk575VDlrCsv1Gy2XZQ1bSA")
-	first = false;
 	}
-	else{
-		bot.chat("Subscribe To MannuG : https://www.youtube.com/channel/UCSZHRnBue50ImBKeR6k6eDg")
-		first = true;
+});
 	}
   }, 3600000 * i); 
 } 
@@ -59,10 +46,6 @@ function task(i) {
 
 bot.on('time', function(time) {
 
-		
-	if(nightskip == "true"){
-	if(bot.time.timeOfDay >= 13000){
-	bot.chat('/time set day')
 	}}
     if (connected <1) {
         return;
