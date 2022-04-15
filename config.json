@@ -1,0 +1,9 @@
+{
+	"ip":"Murgi_Ki_Jawani.aternos.me",
+	"port": 12515,
+	"name": "Pipu_Chan",
+	"auto-night-skip":"false",
+	"login-enabled":"true",
+	"register-cmd":"/register (*AByz#22) (*AByz#22)",
+	"login-cmd":"/login (*AByz#22)"
+}
